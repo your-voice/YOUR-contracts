@@ -1,0 +1,16 @@
+{
+  "name": "YOUR_contracts",
+  "version": "1.0.0",
+  "description": "Your Voice smart contracts",
+  "repository": "https://github.com/PayPlusAG/PLUS-contracts.git",
+  "author": "Luca Agostini <luca.agostini@yourvoice.com>",
+  "license": "ISC",
+  "keywords": [
+    "YOUR",
+    "Your Voice"
+  ],
+  "dependencies": {
+    "erc-payable-token": "^2.2.2",
+    "openzeppelin-solidity": "^2.2.0"
+  }
+}

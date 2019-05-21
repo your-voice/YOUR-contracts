@@ -1,0 +1,3570 @@
+{
+  "contractName": "Receipt",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "shortReceipts",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "addReceiptApp",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "isReceiptApp",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceReceiptApp",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totReceipts",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "ticket",
+          "type": "bytes32"
+        }
+      ],
+      "name": "NewReceipt",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "ReceiptAppAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "ReceiptAppRemoved",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "amountFee",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenValue",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ipfs",
+          "type": "bytes32"
+        }
+      ],
+      "name": "addReceipt",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_tokenValue",
+          "type": "uint24"
+        },
+        {
+          "name": "_amountFee",
+          "type": "uint24"
+        }
+      ],
+      "name": "setReceiptPrice",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_ipfs",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getReceipt",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"shortReceipts\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"amountFee\",\"outputs\":[{\"name\":\"\",\"type\":\"uint24\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addReceiptApp\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenValue\",\"outputs\":[{\"name\":\"\",\"type\":\"uint24\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"ipfs\",\"type\":\"bytes32\"}],\"name\":\"addReceipt\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isReceiptApp\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceReceiptApp\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenValue\",\"type\":\"uint24\"},{\"name\":\"_amountFee\",\"type\":\"uint24\"}],\"name\":\"setReceiptPrice\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totReceipts\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_ipfs\",\"type\":\"bytes32\"}],\"name\":\"getReceipt\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"ticket\",\"type\":\"bytes32\"}],\"name\":\"NewReceipt\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"ReceiptAppAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"ReceiptAppRemoved\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"amountFee()\":{\"return\":\"the name of the token.\"},\"tokenValue()\":{\"return\":\"the name of the token.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/lagostini/PayPlusReceipt/contracts/receiptbase/ReceiptData.sol\":\"Receipt\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/lagostini/PayPlusReceipt/contracts/receiptaccesscontrol/ReceiptAppsRole.sol\":{\"keccak256\":\"0x4c645281de22cba16fbaff498672196184f542a5c879b19f8397049659978e8f\",\"urls\":[\"bzzr://5ea889689303f44e8d2fda6ffe4a96797107487f9529cbeaf5fc5ab140957a50\"]},\"/Users/lagostini/PayPlusReceipt/contracts/receiptbase/ReceiptData.sol\":{\"keccak256\":\"0x0bfb648cd9ea5cf3b639657776410fc596916a49a9b6c822d1a3c6d1050bc84e\",\"urls\":[\"bzzr://34323a797812dccb3d6689a17f282053db3355a8e6eccf6ccac41f0e6341d360\"]},\"openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0x75481aaa988c5e9fbc91b4f695678806579c04e0ad56907978c1ca5c7e92a682\",\"urls\":[\"bzzr://da472135eb9268d863825ea26e227a9f8980c54bd32e0764d61711acca59fc89\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610020336100f560201b60201c565b33600460006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610069610297565b6000816000019062ffffff16908162ffffff16815250506001816020019062ffffff16908162ffffff168152505080600360008201518160000160006101000a81548162ffffff021916908362ffffff16021790555060208201518160000160036101000a81548162ffffff021916908362ffffff1602179055509050506000600281905550506102bb565b61010d81600061015360201b61072a1790919060201c565b8073ffffffffffffffffffffffffffffffffffffffff167fddcb1067788ca87af6324f64f4368bca922019235e74d10946f068ebac6a063360405160405180910390a250565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561018d57600080fd5b61019d828261020560201b60201c565b156101a757600080fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141561024057600080fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6040518060400160405280600062ffffff168152602001600062ffffff1681525090565b6108ad806102ca6000396000f3fe608060405234801561001057600080fd5b506004361061009d5760003560e01c80634d7a3796116100665780634d7a3796146101aa5780635a68b6bb146102065780636d83dd9214610210578063e970ece914610252578063fcecbb61146102705761009d565b806278606c146100a257806316492772146100e85780631e14a095146101105780631ec7e345146101545780632961dc971461017c575b600080fd5b6100ce600480360360208110156100b857600080fd5b81019080803590602001909291905050506102b6565b604051808215151515815260200191505060405180910390f35b6100f06102d6565b604051808262ffffff1662ffffff16815260200191505060405180910390f35b6101526004803603602081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102f2565b005b61015c610379565b604051808262ffffff1662ffffff16815260200191505060405180910390f35b6101a86004803603602081101561019257600080fd5b8101908080359060200190929190505050610395565b005b6101ec600480360360208110156101c057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610481565b604051808215151515815260200191505060405180910390f35b61020e61049e565b005b6102506004803603604081101561022657600080fd5b81019080803562ffffff169060200190929190803562ffffff1690602001909291905050506104a9565b005b61025a6105b4565b6040518082815260200191505060405180910390f35b61029c6004803603602081101561028657600080fd5b81019080803590602001909291905050506105ba565b604051808215151515815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff1681565b6000600360000160009054906101000a900462ffffff16905090565b6102fb33610481565b61036d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f43616c6c6572206973206e6f74206120526563656970744170702e000000000081525060200191505060405180910390fd5b610376816105e4565b50565b6000600360000160039054906101000a900462ffffff16905090565b61039e33610481565b610410576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f43616c6c6572206973206e6f74206120526563656970744170702e000000000081525060200191505060405180910390fd5b600180600083815260200190815260200160002060006101000a81548160ff0219169083151502179055506001600254016002819055507ffac719c1496c84e6db068fe9fe07710ecf1d5cb000f2a6c1c7dfd65462394cdb816040518082815260200191505060405180910390a150565b600061049782600061063e90919063ffffffff16565b9050919050565b6104a7336106d0565b565b600460009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461056c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f43616c6c6572206973206e6f7420636f6e7472616374206f776e65720000000081525060200191505060405180910390fd5b80600360000160006101000a81548162ffffff021916908362ffffff16021790555081600360000160036101000a81548162ffffff021916908362ffffff1602179055505050565b60025481565b60006001600083815260200190815260200160002060009054906101000a900460ff169050919050565b6105f881600061072a90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fddcb1067788ca87af6324f64f4368bca922019235e74d10946f068ebac6a063360405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141561067957600080fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6106e48160006107d690919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f7c91edb2f233227314096da4180ce26763ae2de96ecf839c3f3d01f26460009460405160405180910390a250565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561076457600080fd5b61076e828261063e565b1561077857600080fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561081057600080fd5b61081a828261063e565b61082357600080fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fea165627a7a72305820f5cd0c3406090a0d579a06a56444e094826ca27560d4f8ef4fcd346e70edbe020029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061009d5760003560e01c80634d7a3796116100665780634d7a3796146101aa5780635a68b6bb146102065780636d83dd9214610210578063e970ece914610252578063fcecbb61146102705761009d565b806278606c146100a257806316492772146100e85780631e14a095146101105780631ec7e345146101545780632961dc971461017c575b600080fd5b6100ce600480360360208110156100b857600080fd5b81019080803590602001909291905050506102b6565b604051808215151515815260200191505060405180910390f35b6100f06102d6565b604051808262ffffff1662ffffff16815260200191505060405180910390f35b6101526004803603602081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102f2565b005b61015c610379565b604051808262ffffff1662ffffff16815260200191505060405180910390f35b6101a86004803603602081101561019257600080fd5b8101908080359060200190929190505050610395565b005b6101ec600480360360208110156101c057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610481565b604051808215151515815260200191505060405180910390f35b61020e61049e565b005b6102506004803603604081101561022657600080fd5b81019080803562ffffff169060200190929190803562ffffff1690602001909291905050506104a9565b005b61025a6105b4565b6040518082815260200191505060405180910390f35b61029c6004803603602081101561028657600080fd5b81019080803590602001909291905050506105ba565b604051808215151515815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff1681565b6000600360000160009054906101000a900462ffffff16905090565b6102fb33610481565b61036d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f43616c6c6572206973206e6f74206120526563656970744170702e000000000081525060200191505060405180910390fd5b610376816105e4565b50565b6000600360000160039054906101000a900462ffffff16905090565b61039e33610481565b610410576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f43616c6c6572206973206e6f74206120526563656970744170702e000000000081525060200191505060405180910390fd5b600180600083815260200190815260200160002060006101000a81548160ff0219169083151502179055506001600254016002819055507ffac719c1496c84e6db068fe9fe07710ecf1d5cb000f2a6c1c7dfd65462394cdb816040518082815260200191505060405180910390a150565b600061049782600061063e90919063ffffffff16565b9050919050565b6104a7336106d0565b565b600460009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461056c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f43616c6c6572206973206e6f7420636f6e7472616374206f776e65720000000081525060200191505060405180910390fd5b80600360000160006101000a81548162ffffff021916908362ffffff16021790555081600360000160036101000a81548162ffffff021916908362ffffff1602179055505050565b60025481565b60006001600083815260200190815260200160002060009054906101000a900460ff169050919050565b6105f881600061072a90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fddcb1067788ca87af6324f64f4368bca922019235e74d10946f068ebac6a063360405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141561067957600080fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6106e48160006107d690919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f7c91edb2f233227314096da4180ce26763ae2de96ecf839c3f3d01f26460009460405160405180910390a250565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561076457600080fd5b61076e828261063e565b1561077857600080fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561081057600080fd5b61081a828261063e565b61082357600080fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fea165627a7a72305820f5cd0c3406090a0d579a06a56444e094826ca27560d4f8ef4fcd346e70edbe020029",
+  "sourceMap": "80:2307:5:-;;;598:189;8:9:-1;5:2;;;30:1;27;20:12;5:2;598:189:5;686:26:3;701:10;686:14;;;:26;;:::i;:::-;642:10:5;626:13;;:26;;;;;;;;;;;;;;;;;;658:25;;:::i;:::-;707:1;689:5;:15;;:19;;;;;;;;;;;733:1;714:5;:16;;:20;;;;;;;;;;;756:5;740:13;:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;781:1;767:11;:15;;;;598:189;80:2307;;1485:121:3;1541:25;1558:7;1541:12;:16;;;;;;:25;;;;:::i;:::-;1593:7;1577:24;;;;;;;;;;;;1485:121;:::o;259:181:14:-;354:1;335:21;;:7;:21;;;;327:30;;;;;;376:18;380:4;386:7;376:3;;;:18;;:::i;:::-;375:19;367:28;;;;;;429:4;406;:11;;:20;418:7;406:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;259:181;;:::o;786:162::-;858:4;901:1;882:21;;:7;:21;;;;874:30;;;;;;921:4;:11;;:20;933:7;921:20;;;;;;;;;;;;;;;;;;;;;;;;;914:27;;786:162;;;;:::o;80:2307:5:-;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "80:2307:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;80:2307:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;120:46;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;120:46:5;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1641:91;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1143:96:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1143:96:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;1783:93:5;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1881:156;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1881:156:5;;;;;;;;;;;;;;;;;:::i;:::-;;971:109:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;971:109:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1309:78;;;:::i;:::-;;2041:182:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2041:182:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;170:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;2227:158;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2227:158:5;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;120:46;;;;;;;;;;;;;;;;;;;;;;:::o;1641:91::-;1683:6;1704:13;:23;;;;;;;;;;;;1697:30;;1641:91;:::o;1143:96:3:-;842:24;855:10;842:12;:24::i;:::-;834:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1211:23;1226:7;1211:14;:23::i;:::-;1143:96;:::o;1783:93:5:-;1826:6;1847:13;:24;;;;;;;;;;;;1840:31;;1783:93;:::o;1881:156::-;842:24:3;855:10;842:12;:24::i;:::-;834:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1966:4:5;1944:13;:19;1958:4;1944:19;;;;;;;;;;;;:26;;;;;;;;;;;;;;;;;;2004:1;1990:11;;:15;1976:11;:29;;;;2016:16;2027:4;2016:16;;;;;;;;;;;;;;;;;;1881:156;:::o;971:109:3:-;1031:4;1050:25;1067:7;1050:12;:16;;:25;;;;:::i;:::-;1043:32;;971:109;;;:::o;1309:78::-;1353:29;1371:10;1353:17;:29::i;:::-;1309:78::o;2041:182:5:-;1242:13;;;;;;;;;;;1228:27;;:10;:27;;;1220:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2164:10;2138:13;:23;;;:36;;;;;;;;;;;;;;;;;;2207:11;2180:13;:24;;;:38;;;;;;;;;;;;;;;;;;2041:182;;:::o;170:26::-;;;;:::o;2227:158::-;2283:4;2359:13;:20;2373:5;2359:20;;;;;;;;;;;;;;;;;;;;;2352:27;;2227:158;;;:::o;1485:121:3:-;1541:25;1558:7;1541:12;:16;;:25;;;;:::i;:::-;1593:7;1577:24;;;;;;;;;;;;1485:121;:::o;786:162:14:-;858:4;901:1;882:21;;:7;:21;;;;874:30;;;;;;921:4;:11;;:20;933:7;921:20;;;;;;;;;;;;;;;;;;;;;;;;;914:27;;786:162;;;;:::o;1713:129:3:-;1772:28;1792:7;1772:12;:19;;:28;;;;:::i;:::-;1829:7;1811:26;;;;;;;;;;;;1713:129;:::o;259:181:14:-;354:1;335:21;;:7;:21;;;;327:30;;;;;;376:18;380:4;386:7;376:3;:18::i;:::-;375:19;367:28;;;;;;429:4;406;:11;;:20;418:7;406:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;259:181;;:::o;514:184::-;612:1;593:21;;:7;:21;;;;585:30;;;;;;633:18;637:4;643:7;633:3;:18::i;:::-;625:27;;;;;;686:5;663:4;:11;;:20;675:7;663:20;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;514:184;;:::o",
+  "source": "pragma solidity ^0.5.8;\n\nimport \"../receiptaccesscontrol/ReceiptAppsRole.sol\";\n\ncontract Receipt is ReceiptAppsRole {\n  mapping (bytes32 => bool) public shortReceipts;\n  uint256 public totReceipts;\n  //mapping (uint256 => bytes32) public receipts;\n  ReceiptPrice  _receiptPrice;\n  address private contractOwner;              // Account used to deploy contract\n  struct ReceiptPrice{\n    uint24 amountFee;   //smart contract fee in % of CC transaction. Resolution is 4 decimals\n    uint24 tokenValue;  //smart token value in EUR. Resolution is 4 decimals\n  }\n\n  event NewReceipt(bytes32 ticket);\n\n  constructor() public  {\n    contractOwner = msg.sender;\n    ReceiptPrice memory price;\n    price.amountFee = 0;\n    price.tokenValue = 1;\n    _receiptPrice = price;\n    totReceipts = 0;\n  }\n\n  /********************************************************************************************/\n  /*                                       FUNCTION MODIFIERS                                 */\n  /********************************************************************************************/\n\n  /**\n  * @dev Modifier that requires the \"ContractOwner\" account to be the function caller\n  */\n  modifier requireContractOwner()\n  {\n    require(msg.sender == contractOwner, \"Caller is not contract owner\");\n    _;\n  }\n\n  /********************************************************************************************/\n  /*                                       SMART CONTRACT FUNCTIONS                           */\n  /********************************************************************************************/\n  /**\n  * @return the name of the token.\n  */\n  function amountFee() public view returns (uint24) {\n    return _receiptPrice.amountFee;\n  }\n    /**\n  * @return the name of the token.\n  */\n  function tokenValue() public view returns (uint24) {\n    return _receiptPrice.tokenValue;\n  }\n\n\n  function addReceipt(bytes32  ipfs) public onlyReceiptApp {\n    shortReceipts[ipfs] = true;\n    totReceipts = totReceipts + 1;\n    emit NewReceipt(ipfs);\n  }\n\n  function setReceiptPrice(uint24 _tokenValue, uint24 _amountFee) public requireContractOwner{\n    _receiptPrice.amountFee = _amountFee;\n    _receiptPrice.tokenValue = _tokenValue;\n  }\n\n  function getReceipt(bytes32 _ipfs ) public view returns(bool){\n    //require(shortReceipts[_ipfs], \"Receipt not found\");\n    return shortReceipts[_ipfs];\n\n  }\n}",
+  "sourcePath": "/Users/lagostini/PayPlusReceipt/contracts/receiptbase/ReceiptData.sol",
+  "ast": {
+    "absolutePath": "/Users/lagostini/PayPlusReceipt/contracts/receiptbase/ReceiptData.sol",
+    "exportedSymbols": {
+      "Receipt": [
+        797
+      ]
+    },
+    "id": 798,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 654,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/Users/lagostini/PayPlusReceipt/contracts/receiptaccesscontrol/ReceiptAppsRole.sol",
+        "file": "../receiptaccesscontrol/ReceiptAppsRole.sol",
+        "id": 655,
+        "nodeType": "ImportDirective",
+        "scope": 798,
+        "sourceUnit": 308,
+        "src": "25:53:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 656,
+              "name": "ReceiptAppsRole",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 307,
+              "src": "100:15:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ReceiptAppsRole_$307",
+                "typeString": "contract ReceiptAppsRole"
+              }
+            },
+            "id": 657,
+            "nodeType": "InheritanceSpecifier",
+            "src": "100:15:5"
+          }
+        ],
+        "contractDependencies": [
+          307
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 797,
+        "linearizedBaseContracts": [
+          797,
+          307
+        ],
+        "name": "Receipt",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 661,
+            "name": "shortReceipts",
+            "nodeType": "VariableDeclaration",
+            "scope": 797,
+            "src": "120:46:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+              "typeString": "mapping(bytes32 => bool)"
+            },
+            "typeName": {
+              "id": 660,
+              "keyType": {
+                "id": 658,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "129:7:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "120:25:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+                "typeString": "mapping(bytes32 => bool)"
+              },
+              "valueType": {
+                "id": 659,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "140:4:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 663,
+            "name": "totReceipts",
+            "nodeType": "VariableDeclaration",
+            "scope": 797,
+            "src": "170:26:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 662,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "170:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 665,
+            "name": "_receiptPrice",
+            "nodeType": "VariableDeclaration",
+            "scope": 797,
+            "src": "250:27:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+              "typeString": "struct Receipt.ReceiptPrice"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 664,
+              "name": "ReceiptPrice",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 672,
+              "src": "250:12:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage_ptr",
+                "typeString": "struct Receipt.ReceiptPrice"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 667,
+            "name": "contractOwner",
+            "nodeType": "VariableDeclaration",
+            "scope": 797,
+            "src": "281:29:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 666,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "281:7:5",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "canonicalName": "Receipt.ReceiptPrice",
+            "id": 672,
+            "members": [
+              {
+                "constant": false,
+                "id": 669,
+                "name": "amountFee",
+                "nodeType": "VariableDeclaration",
+                "scope": 672,
+                "src": "387:16:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint24",
+                  "typeString": "uint24"
+                },
+                "typeName": {
+                  "id": 668,
+                  "name": "uint24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "387:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 671,
+                "name": "tokenValue",
+                "nodeType": "VariableDeclaration",
+                "scope": 672,
+                "src": "481:17:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint24",
+                  "typeString": "uint24"
+                },
+                "typeName": {
+                  "id": 670,
+                  "name": "uint24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "481:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ReceiptPrice",
+            "nodeType": "StructDefinition",
+            "scope": 797,
+            "src": "362:195:5",
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 676,
+            "name": "NewReceipt",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 675,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 674,
+                  "indexed": false,
+                  "name": "ticket",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 676,
+                  "src": "578:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 673,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "578:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "577:16:5"
+            },
+            "src": "561:33:5"
+          },
+          {
+            "body": {
+              "id": 707,
+              "nodeType": "Block",
+              "src": "620:167:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 682,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 679,
+                      "name": "contractOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 667,
+                      "src": "626:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 680,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2525,
+                        "src": "642:3:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 681,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "642:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "626:26:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 683,
+                  "nodeType": "ExpressionStatement",
+                  "src": "626:26:5"
+                },
+                {
+                  "assignments": [
+                    685
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 685,
+                      "name": "price",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 707,
+                      "src": "658:25:5",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_memory_ptr",
+                        "typeString": "struct Receipt.ReceiptPrice"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 684,
+                        "name": "ReceiptPrice",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 672,
+                        "src": "658:12:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage_ptr",
+                          "typeString": "struct Receipt.ReceiptPrice"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 686,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "658:25:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 691,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 687,
+                        "name": "price",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 685,
+                        "src": "689:5:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_memory_ptr",
+                          "typeString": "struct Receipt.ReceiptPrice memory"
+                        }
+                      },
+                      "id": 689,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "amountFee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 669,
+                      "src": "689:15:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 690,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "707:1:5",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "689:19:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "id": 692,
+                  "nodeType": "ExpressionStatement",
+                  "src": "689:19:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 697,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 693,
+                        "name": "price",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 685,
+                        "src": "714:5:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_memory_ptr",
+                          "typeString": "struct Receipt.ReceiptPrice memory"
+                        }
+                      },
+                      "id": 695,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "tokenValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 671,
+                      "src": "714:16:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 696,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "733:1:5",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "714:20:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "id": 698,
+                  "nodeType": "ExpressionStatement",
+                  "src": "714:20:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 701,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 699,
+                      "name": "_receiptPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 665,
+                      "src": "740:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                        "typeString": "struct Receipt.ReceiptPrice storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 700,
+                      "name": "price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 685,
+                      "src": "756:5:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_memory_ptr",
+                        "typeString": "struct Receipt.ReceiptPrice memory"
+                      }
+                    },
+                    "src": "740:21:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                      "typeString": "struct Receipt.ReceiptPrice storage ref"
+                    }
+                  },
+                  "id": 702,
+                  "nodeType": "ExpressionStatement",
+                  "src": "740:21:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 705,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 703,
+                      "name": "totReceipts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 663,
+                      "src": "767:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 704,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "781:1:5",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "767:15:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 706,
+                  "nodeType": "ExpressionStatement",
+                  "src": "767:15:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 708,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 677,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "609:2:5"
+            },
+            "returnParameters": {
+              "id": 678,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "620:0:5"
+            },
+            "scope": 797,
+            "src": "598:189:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 719,
+              "nodeType": "Block",
+              "src": "1214:86:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 714,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 711,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2525,
+                            "src": "1228:3:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 712,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "1228:10:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 713,
+                          "name": "contractOwner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 667,
+                          "src": "1242:13:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1228:27:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "43616c6c6572206973206e6f7420636f6e7472616374206f776e6572",
+                        "id": 715,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1257:30:5",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_ad5b8255218fc9200bf271049bc5472a1a7a8192290eba60272e432e608ceea3",
+                          "typeString": "literal_string \"Caller is not contract owner\""
+                        },
+                        "value": "Caller is not contract owner"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_ad5b8255218fc9200bf271049bc5472a1a7a8192290eba60272e432e608ceea3",
+                          "typeString": "literal_string \"Caller is not contract owner\""
+                        }
+                      ],
+                      "id": 710,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2528,
+                        2529
+                      ],
+                      "referencedDeclaration": 2529,
+                      "src": "1220:7:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 716,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1220:68:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 717,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1220:68:5"
+                },
+                {
+                  "id": 718,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1294:1:5"
+                }
+              ]
+            },
+            "documentation": "@dev Modifier that requires the \"ContractOwner\" account to be the function caller",
+            "id": 720,
+            "name": "requireContractOwner",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 709,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1209:2:5"
+            },
+            "src": "1180:120:5",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 728,
+              "nodeType": "Block",
+              "src": "1691:41:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 725,
+                      "name": "_receiptPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 665,
+                      "src": "1704:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                        "typeString": "struct Receipt.ReceiptPrice storage ref"
+                      }
+                    },
+                    "id": 726,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "amountFee",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 669,
+                    "src": "1704:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "functionReturnParameters": 724,
+                  "id": 727,
+                  "nodeType": "Return",
+                  "src": "1697:30:5"
+                }
+              ]
+            },
+            "documentation": "@return the name of the token.",
+            "id": 729,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "amountFee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 721,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1659:2:5"
+            },
+            "returnParameters": {
+              "id": 724,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 723,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 729,
+                  "src": "1683:6:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 722,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1683:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1682:8:5"
+            },
+            "scope": 797,
+            "src": "1641:91:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 737,
+              "nodeType": "Block",
+              "src": "1834:42:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 734,
+                      "name": "_receiptPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 665,
+                      "src": "1847:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                        "typeString": "struct Receipt.ReceiptPrice storage ref"
+                      }
+                    },
+                    "id": 735,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "tokenValue",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 671,
+                    "src": "1847:24:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "functionReturnParameters": 733,
+                  "id": 736,
+                  "nodeType": "Return",
+                  "src": "1840:31:5"
+                }
+              ]
+            },
+            "documentation": "@return the name of the token.",
+            "id": 738,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 730,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1802:2:5"
+            },
+            "returnParameters": {
+              "id": 733,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 732,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 738,
+                  "src": "1826:6:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 731,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1826:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1825:8:5"
+            },
+            "scope": 797,
+            "src": "1783:93:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 761,
+              "nodeType": "Block",
+              "src": "1938:99:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 749,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 745,
+                        "name": "shortReceipts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 661,
+                        "src": "1944:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+                          "typeString": "mapping(bytes32 => bool)"
+                        }
+                      },
+                      "id": 747,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 746,
+                        "name": "ipfs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 740,
+                        "src": "1958:4:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1944:19:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 748,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1966:4:5",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1944:26:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 750,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1944:26:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 755,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 751,
+                      "name": "totReceipts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 663,
+                      "src": "1976:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 754,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 752,
+                        "name": "totReceipts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 663,
+                        "src": "1990:11:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 753,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2004:1:5",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      },
+                      "src": "1990:15:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1976:29:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 756,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1976:29:5"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 758,
+                        "name": "ipfs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 740,
+                        "src": "2027:4:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 757,
+                      "name": "NewReceipt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 676,
+                      "src": "2016:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
+                        "typeString": "function (bytes32)"
+                      }
+                    },
+                    "id": 759,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2016:16:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 760,
+                  "nodeType": "EmitStatement",
+                  "src": "2011:21:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 762,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 743,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 742,
+                  "name": "onlyReceiptApp",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 240,
+                  "src": "1923:14:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1923:14:5"
+              }
+            ],
+            "name": "addReceipt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 741,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 740,
+                  "name": "ipfs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 762,
+                  "src": "1901:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 739,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1901:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1900:15:5"
+            },
+            "returnParameters": {
+              "id": 744,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1938:0:5"
+            },
+            "scope": 797,
+            "src": "1881:156:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 783,
+              "nodeType": "Block",
+              "src": "2132:91:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 775,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 771,
+                        "name": "_receiptPrice",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 665,
+                        "src": "2138:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                          "typeString": "struct Receipt.ReceiptPrice storage ref"
+                        }
+                      },
+                      "id": 773,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "amountFee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 669,
+                      "src": "2138:23:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 774,
+                      "name": "_amountFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 766,
+                      "src": "2164:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "src": "2138:36:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "id": 776,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2138:36:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 781,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 777,
+                        "name": "_receiptPrice",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 665,
+                        "src": "2180:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                          "typeString": "struct Receipt.ReceiptPrice storage ref"
+                        }
+                      },
+                      "id": 779,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "tokenValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 671,
+                      "src": "2180:24:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 780,
+                      "name": "_tokenValue",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 764,
+                      "src": "2207:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "src": "2180:38:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "id": 782,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2180:38:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 784,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 769,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 768,
+                  "name": "requireContractOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 720,
+                  "src": "2112:20:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "2112:20:5"
+              }
+            ],
+            "name": "setReceiptPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 767,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 764,
+                  "name": "_tokenValue",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 784,
+                  "src": "2066:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 763,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2066:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 766,
+                  "name": "_amountFee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 784,
+                  "src": "2086:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 765,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2086:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2065:39:5"
+            },
+            "returnParameters": {
+              "id": 770,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2132:0:5"
+            },
+            "scope": 797,
+            "src": "2041:182:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 795,
+              "nodeType": "Block",
+              "src": "2288:97:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 791,
+                      "name": "shortReceipts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 661,
+                      "src": "2359:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+                        "typeString": "mapping(bytes32 => bool)"
+                      }
+                    },
+                    "id": 793,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 792,
+                      "name": "_ipfs",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 786,
+                      "src": "2373:5:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "2359:20:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 790,
+                  "id": 794,
+                  "nodeType": "Return",
+                  "src": "2352:27:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 796,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReceipt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 787,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 786,
+                  "name": "_ipfs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 796,
+                  "src": "2247:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 785,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2247:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2246:16:5"
+            },
+            "returnParameters": {
+              "id": 790,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 789,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 796,
+                  "src": "2283:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 788,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2283:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2282:6:5"
+            },
+            "scope": 797,
+            "src": "2227:158:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 798,
+        "src": "80:2307:5"
+      }
+    ],
+    "src": "0:2387:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/lagostini/PayPlusReceipt/contracts/receiptbase/ReceiptData.sol",
+    "exportedSymbols": {
+      "Receipt": [
+        797
+      ]
+    },
+    "id": 798,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 654,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/Users/lagostini/PayPlusReceipt/contracts/receiptaccesscontrol/ReceiptAppsRole.sol",
+        "file": "../receiptaccesscontrol/ReceiptAppsRole.sol",
+        "id": 655,
+        "nodeType": "ImportDirective",
+        "scope": 798,
+        "sourceUnit": 308,
+        "src": "25:53:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 656,
+              "name": "ReceiptAppsRole",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 307,
+              "src": "100:15:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ReceiptAppsRole_$307",
+                "typeString": "contract ReceiptAppsRole"
+              }
+            },
+            "id": 657,
+            "nodeType": "InheritanceSpecifier",
+            "src": "100:15:5"
+          }
+        ],
+        "contractDependencies": [
+          307
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 797,
+        "linearizedBaseContracts": [
+          797,
+          307
+        ],
+        "name": "Receipt",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 661,
+            "name": "shortReceipts",
+            "nodeType": "VariableDeclaration",
+            "scope": 797,
+            "src": "120:46:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+              "typeString": "mapping(bytes32 => bool)"
+            },
+            "typeName": {
+              "id": 660,
+              "keyType": {
+                "id": 658,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "129:7:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "120:25:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+                "typeString": "mapping(bytes32 => bool)"
+              },
+              "valueType": {
+                "id": 659,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "140:4:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 663,
+            "name": "totReceipts",
+            "nodeType": "VariableDeclaration",
+            "scope": 797,
+            "src": "170:26:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 662,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "170:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 665,
+            "name": "_receiptPrice",
+            "nodeType": "VariableDeclaration",
+            "scope": 797,
+            "src": "250:27:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+              "typeString": "struct Receipt.ReceiptPrice"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 664,
+              "name": "ReceiptPrice",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 672,
+              "src": "250:12:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage_ptr",
+                "typeString": "struct Receipt.ReceiptPrice"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 667,
+            "name": "contractOwner",
+            "nodeType": "VariableDeclaration",
+            "scope": 797,
+            "src": "281:29:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 666,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "281:7:5",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "canonicalName": "Receipt.ReceiptPrice",
+            "id": 672,
+            "members": [
+              {
+                "constant": false,
+                "id": 669,
+                "name": "amountFee",
+                "nodeType": "VariableDeclaration",
+                "scope": 672,
+                "src": "387:16:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint24",
+                  "typeString": "uint24"
+                },
+                "typeName": {
+                  "id": 668,
+                  "name": "uint24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "387:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 671,
+                "name": "tokenValue",
+                "nodeType": "VariableDeclaration",
+                "scope": 672,
+                "src": "481:17:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint24",
+                  "typeString": "uint24"
+                },
+                "typeName": {
+                  "id": 670,
+                  "name": "uint24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "481:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ReceiptPrice",
+            "nodeType": "StructDefinition",
+            "scope": 797,
+            "src": "362:195:5",
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 676,
+            "name": "NewReceipt",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 675,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 674,
+                  "indexed": false,
+                  "name": "ticket",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 676,
+                  "src": "578:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 673,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "578:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "577:16:5"
+            },
+            "src": "561:33:5"
+          },
+          {
+            "body": {
+              "id": 707,
+              "nodeType": "Block",
+              "src": "620:167:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 682,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 679,
+                      "name": "contractOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 667,
+                      "src": "626:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 680,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2525,
+                        "src": "642:3:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 681,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "642:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "626:26:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 683,
+                  "nodeType": "ExpressionStatement",
+                  "src": "626:26:5"
+                },
+                {
+                  "assignments": [
+                    685
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 685,
+                      "name": "price",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 707,
+                      "src": "658:25:5",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_memory_ptr",
+                        "typeString": "struct Receipt.ReceiptPrice"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 684,
+                        "name": "ReceiptPrice",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 672,
+                        "src": "658:12:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage_ptr",
+                          "typeString": "struct Receipt.ReceiptPrice"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 686,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "658:25:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 691,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 687,
+                        "name": "price",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 685,
+                        "src": "689:5:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_memory_ptr",
+                          "typeString": "struct Receipt.ReceiptPrice memory"
+                        }
+                      },
+                      "id": 689,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "amountFee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 669,
+                      "src": "689:15:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 690,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "707:1:5",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "689:19:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "id": 692,
+                  "nodeType": "ExpressionStatement",
+                  "src": "689:19:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 697,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 693,
+                        "name": "price",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 685,
+                        "src": "714:5:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_memory_ptr",
+                          "typeString": "struct Receipt.ReceiptPrice memory"
+                        }
+                      },
+                      "id": 695,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "tokenValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 671,
+                      "src": "714:16:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 696,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "733:1:5",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "714:20:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "id": 698,
+                  "nodeType": "ExpressionStatement",
+                  "src": "714:20:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 701,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 699,
+                      "name": "_receiptPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 665,
+                      "src": "740:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                        "typeString": "struct Receipt.ReceiptPrice storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 700,
+                      "name": "price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 685,
+                      "src": "756:5:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_memory_ptr",
+                        "typeString": "struct Receipt.ReceiptPrice memory"
+                      }
+                    },
+                    "src": "740:21:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                      "typeString": "struct Receipt.ReceiptPrice storage ref"
+                    }
+                  },
+                  "id": 702,
+                  "nodeType": "ExpressionStatement",
+                  "src": "740:21:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 705,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 703,
+                      "name": "totReceipts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 663,
+                      "src": "767:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 704,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "781:1:5",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "767:15:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 706,
+                  "nodeType": "ExpressionStatement",
+                  "src": "767:15:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 708,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 677,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "609:2:5"
+            },
+            "returnParameters": {
+              "id": 678,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "620:0:5"
+            },
+            "scope": 797,
+            "src": "598:189:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 719,
+              "nodeType": "Block",
+              "src": "1214:86:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 714,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 711,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 2525,
+                            "src": "1228:3:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 712,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "1228:10:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 713,
+                          "name": "contractOwner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 667,
+                          "src": "1242:13:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1228:27:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "43616c6c6572206973206e6f7420636f6e7472616374206f776e6572",
+                        "id": 715,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1257:30:5",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_ad5b8255218fc9200bf271049bc5472a1a7a8192290eba60272e432e608ceea3",
+                          "typeString": "literal_string \"Caller is not contract owner\""
+                        },
+                        "value": "Caller is not contract owner"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_ad5b8255218fc9200bf271049bc5472a1a7a8192290eba60272e432e608ceea3",
+                          "typeString": "literal_string \"Caller is not contract owner\""
+                        }
+                      ],
+                      "id": 710,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2528,
+                        2529
+                      ],
+                      "referencedDeclaration": 2529,
+                      "src": "1220:7:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 716,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1220:68:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 717,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1220:68:5"
+                },
+                {
+                  "id": 718,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1294:1:5"
+                }
+              ]
+            },
+            "documentation": "@dev Modifier that requires the \"ContractOwner\" account to be the function caller",
+            "id": 720,
+            "name": "requireContractOwner",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 709,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1209:2:5"
+            },
+            "src": "1180:120:5",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 728,
+              "nodeType": "Block",
+              "src": "1691:41:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 725,
+                      "name": "_receiptPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 665,
+                      "src": "1704:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                        "typeString": "struct Receipt.ReceiptPrice storage ref"
+                      }
+                    },
+                    "id": 726,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "amountFee",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 669,
+                    "src": "1704:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "functionReturnParameters": 724,
+                  "id": 727,
+                  "nodeType": "Return",
+                  "src": "1697:30:5"
+                }
+              ]
+            },
+            "documentation": "@return the name of the token.",
+            "id": 729,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "amountFee",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 721,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1659:2:5"
+            },
+            "returnParameters": {
+              "id": 724,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 723,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 729,
+                  "src": "1683:6:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 722,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1683:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1682:8:5"
+            },
+            "scope": 797,
+            "src": "1641:91:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 737,
+              "nodeType": "Block",
+              "src": "1834:42:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 734,
+                      "name": "_receiptPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 665,
+                      "src": "1847:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                        "typeString": "struct Receipt.ReceiptPrice storage ref"
+                      }
+                    },
+                    "id": 735,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "tokenValue",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 671,
+                    "src": "1847:24:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "functionReturnParameters": 733,
+                  "id": 736,
+                  "nodeType": "Return",
+                  "src": "1840:31:5"
+                }
+              ]
+            },
+            "documentation": "@return the name of the token.",
+            "id": 738,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 730,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1802:2:5"
+            },
+            "returnParameters": {
+              "id": 733,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 732,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 738,
+                  "src": "1826:6:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 731,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1826:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1825:8:5"
+            },
+            "scope": 797,
+            "src": "1783:93:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 761,
+              "nodeType": "Block",
+              "src": "1938:99:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 749,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 745,
+                        "name": "shortReceipts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 661,
+                        "src": "1944:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+                          "typeString": "mapping(bytes32 => bool)"
+                        }
+                      },
+                      "id": 747,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 746,
+                        "name": "ipfs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 740,
+                        "src": "1958:4:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1944:19:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 748,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1966:4:5",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1944:26:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 750,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1944:26:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 755,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 751,
+                      "name": "totReceipts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 663,
+                      "src": "1976:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 754,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 752,
+                        "name": "totReceipts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 663,
+                        "src": "1990:11:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 753,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2004:1:5",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      },
+                      "src": "1990:15:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1976:29:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 756,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1976:29:5"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 758,
+                        "name": "ipfs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 740,
+                        "src": "2027:4:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 757,
+                      "name": "NewReceipt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 676,
+                      "src": "2016:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
+                        "typeString": "function (bytes32)"
+                      }
+                    },
+                    "id": 759,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2016:16:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 760,
+                  "nodeType": "EmitStatement",
+                  "src": "2011:21:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 762,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 743,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 742,
+                  "name": "onlyReceiptApp",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 240,
+                  "src": "1923:14:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1923:14:5"
+              }
+            ],
+            "name": "addReceipt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 741,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 740,
+                  "name": "ipfs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 762,
+                  "src": "1901:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 739,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1901:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1900:15:5"
+            },
+            "returnParameters": {
+              "id": 744,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1938:0:5"
+            },
+            "scope": 797,
+            "src": "1881:156:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 783,
+              "nodeType": "Block",
+              "src": "2132:91:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 775,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 771,
+                        "name": "_receiptPrice",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 665,
+                        "src": "2138:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                          "typeString": "struct Receipt.ReceiptPrice storage ref"
+                        }
+                      },
+                      "id": 773,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "amountFee",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 669,
+                      "src": "2138:23:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 774,
+                      "name": "_amountFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 766,
+                      "src": "2164:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "src": "2138:36:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "id": 776,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2138:36:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 781,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 777,
+                        "name": "_receiptPrice",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 665,
+                        "src": "2180:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ReceiptPrice_$672_storage",
+                          "typeString": "struct Receipt.ReceiptPrice storage ref"
+                        }
+                      },
+                      "id": 779,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "tokenValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 671,
+                      "src": "2180:24:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 780,
+                      "name": "_tokenValue",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 764,
+                      "src": "2207:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint24",
+                        "typeString": "uint24"
+                      }
+                    },
+                    "src": "2180:38:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "id": 782,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2180:38:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 784,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 769,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 768,
+                  "name": "requireContractOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 720,
+                  "src": "2112:20:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "2112:20:5"
+              }
+            ],
+            "name": "setReceiptPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 767,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 764,
+                  "name": "_tokenValue",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 784,
+                  "src": "2066:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 763,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2066:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 766,
+                  "name": "_amountFee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 784,
+                  "src": "2086:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 765,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2086:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2065:39:5"
+            },
+            "returnParameters": {
+              "id": 770,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2132:0:5"
+            },
+            "scope": 797,
+            "src": "2041:182:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 795,
+              "nodeType": "Block",
+              "src": "2288:97:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 791,
+                      "name": "shortReceipts",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 661,
+                      "src": "2359:13:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+                        "typeString": "mapping(bytes32 => bool)"
+                      }
+                    },
+                    "id": 793,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 792,
+                      "name": "_ipfs",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 786,
+                      "src": "2373:5:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "2359:20:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 790,
+                  "id": 794,
+                  "nodeType": "Return",
+                  "src": "2352:27:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 796,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReceipt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 787,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 786,
+                  "name": "_ipfs",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 796,
+                  "src": "2247:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 785,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2247:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2246:16:5"
+            },
+            "returnParameters": {
+              "id": 790,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 789,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 796,
+                  "src": "2283:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 788,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2283:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2282:6:5"
+            },
+            "scope": 797,
+            "src": "2227:158:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 798,
+        "src": "80:2307:5"
+      }
+    ],
+    "src": "0:2387:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.9",
+  "updatedAt": "2019-05-10T17:15:52.602Z",
+  "devdoc": {
+    "methods": {
+      "amountFee()": {
+        "return": "the name of the token."
+      },
+      "tokenValue()": {
+        "return": "the name of the token."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
